@@ -2,7 +2,7 @@
 Every time you choose to apply a rule(s), explicitly state the rule(s) in the output. You can abbreviate the rule description to a single word or phrase.
 
   
-## Project Context
+## Project Feature
 [Brief description ]
 - Basic UI with mock data
 - Setup Database (vercel postgres)
@@ -10,6 +10,8 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 - Add image
 - Add authentication (w/ clerk)
 - Routing/image page (parallel routing)
+- taint (server only)
+- Use Next/Image component
 - Delete image
 - error handling(w/ Sentry)
 - Analytics (Posthogs)

@@ -18,12 +18,13 @@ import {
  */
 export const createTable = pgTableCreator((name) => `react-lemon_${name}`);
 
-export const image = createTable(
+export const images = createTable(
   "image",
   {
     id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
     name: varchar("name", { length: 256 }).notNull(),
     url: varchar("url", { length: 256 }).notNull(),
+    userId: varchar("user_id", { length: 256 }).notNull(),
     createdAt: timestamp("created_at", { withTimezone: true })
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
