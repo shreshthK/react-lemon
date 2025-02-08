@@ -1,9 +1,11 @@
 import { getImageById } from "~/server/queries";
 import { Modal } from "./modal";
-export default async function PhotoModal(props: {
+export default async function PhotoModal({
+  params,
+}: {
   params: { id: string };
 }) {
-  const { id } = await props.params;
+  const { id } = await params;
   const image = await getImageById(parseInt(id));
   return (
     <Modal>
